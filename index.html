@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!--Meta dados-->    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="vierport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+	<title>MEU PORTFÓLIO</title>
+
+<!--CSS-->	
+
+	<link type="text/css" href="./estilo.css" rel="stylesheet">
+    <link type="text/css" href="./footer.css" rel="stylesheet">
+    <link type="text/css" href="./header.css" rel="stylesheet">
+    <link type="text/css" href="./grid.css"   rel="stylesheet">
+   
+<!--FONTS-->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  
+<!--ICONS-->                                     <!-- Se for em JS é preciso colocar "defer"-->
+
+      <script src="https://kit.fontawesome.com/79d2fb52e6.js" crossorigin="anonymous" defer></script>
+
+
+</head>
+
+<body onload="carregar()">
+
+<!--Portifólio-->
+
+<div class="posicao_x" > 
+
+    <header>
+        
+        <h1>Dev.PAULO AGUIAR</h1>
+
+    <nav>
+      
+        <a href="https://www.linkedin.com/in/paulo-aguiar-02346b195" target="_blank">
+        <i class="fa-brands fa-linkedin"></i></a>
+
+        <a href="https://www.facebook.com/profile.php?id=100027839610459"target="_blank">
+        <i class="fa-brands fa-facebook"></i></a>
+
+        <a href="https://twitter.com/PauloScooby81"target="_blank">
+        <i class="fa-brands fa-twitter"></i></a> 
+
+        <a href="https://www.instagram.com/pauloaguiaralb81/"target="_blank">
+        <i class="fa-brands fa-instagram"></i></a> 
+
+        <a href="https://github.com/PaulinhoScooby"target="_blank"> 
+        <i class="fa-brands fa-github"></i></a>
+
+  
+    </nav>
+
+</section>
+    </header>
+    <br>
+    
+
+<main>
+ 
+    
+  
+    <section class="container">
+        <article class="text"><br><br><br><br><br>
+
+         <h2>🙋‍♂️ Sobre mim</h2><br>
+
+         <p>
+
+            Olá, me chamo Paulo🕺, sou de Recife,<br> pernambuco e estou em busca de um estágio como Front-End,<br> sou estudante do curso superior de analise e desenvolvimento de sistema, 4º periodo<br> (uniasselvi), também estudo várias outras tecnologias, buscando agregar cada vez mais<br> conhecimento, de modo a me tornar um desenvolvedor o mais completo possivel.😁
+
+        </p>
+
+        </article>
+
+    <aside class="techs"><br><br><br><br>
+
+         <h2> 🖥 Tecnologias </h2><br>
+
+
+     <div class="cards-container">
+        
+         <div class="card">
+         <img src="./src/techs/html-logo.png" alt="logo do html 5">
+         </div>
+
+         <div class="card">
+         <img src="./src/techs/css3-logo.png" alt="logo do css 3">
+         </div>
+
+         <div class="card">
+         <img src="./src/techs/javascript-logo.png" alt="logo do Java script">
+         </div>
+
+         <div class="card">
+             <img src="./src/techs/react-logo.png" alt="logo do React">
+             </div>
+     </div>
+
+     </aside>
+        
+
+
+</section>
+
+<!--foto-->
+<article class="imagem">
+    <figure>
+         <img src="./src/techs/paulo2.jpg" alt="imagemm de Paulo Aguiar" >
+    </figure>
+</article> 
+<!----> 
+</section>
+</main>
+
+
+</div>
+<section>
+    
+</section>
+
+<!--Fim do portifólio-->
+
+	<canvas id="canvas"></canvas>
+	<script>
+	function efeitoMatrix(neo) {
+	//	Variáveis globais
+		var tela 	= window.screen;
+		var largura = neo.width 	= tela.width;
+		var altura 	= neo.height 	= tela.height;
+		var letras 	= Array(256).join(1).split('');
+	//	Desenha o efeito matrix na tela	
+		var desenhaMatrix = function(){
+		// Fundo Preto
+			neo.getContext('2d').fillStyle = 'rgba(0,0,0,.05)';
+			neo.getContext('2d').fillRect(0,0,largura,altura);
+		//	Letras
+			neo.getContext('2d').fillStyle = '#0F0';
+		//
+			letras.map(function(posicao_y, index){
+		//	Texto 
+			var texto = String.fromCharCode(48 + Math.random() * 33);
+			var posicao_x = index * 10;
+			neo.getContext('2d').fillText(texto, posicao_x, posicao_y);
+		//	Array index
+			letras[index] = (posicao_y > 758 + Math.random() * 1e4) ? 0 : posicao_y + 10;	 
+			});
+		}
+		setInterval(desenhaMatrix, 60);
+	}
+//	Função de carregar a página e pasar o id canvas para a função
+	function carregar() {
+		var canvas = document.getElementById('canvas')
+		efeitoMatrix(canvas);
+	}
+	</script>
+	<script src="./main.js"></script>
+
+</body>
+</html>
+ 

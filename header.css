@@ -1,0 +1,41 @@
+
+header{
+    margin-top: 0%;
+    margin-left: 0%;
+    
+   margin-right: 0%;
+    
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    margin-top: -5%;
+    margin-block: 4%;
+    height: 0px;
+    font-size: 3rem;
+    box-shadow: 1px 1px 20px #26a610;
+    color: #00e0ff;
+    transition: 0.2s ease-in-out;
+}
+
+nav a {
+   
+    
+    border-radius: 10%;
+    margin-left: -15%;
+    margin-right: 14%;
+    cursor: pointer;
+    border: 0.2s ease-in-out;
+    transition: box-shadow 0.30s ease-in-out;
+    font-size: 1.2em;
+    color: #00e0ff;
+    transition: 0.2s ease-in-out;
+ 
+}
+header h1:hover, a:hover {
+    color:#13da10;
+    box-shadow: 0px 0px 15px #1eb92a;
+}
+

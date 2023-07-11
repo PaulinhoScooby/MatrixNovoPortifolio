@@ -1,0 +1,127 @@
+body{
+
+    min-height: 100%;
+    margin-top: 0% auto;
+    margin-left: 0% auto;
+    padding: 0% auto;
+    margin-right: 0%;
+} 
+.posicao_x{
+	position: absolute;
+   
+}
+main {
+    
+    width: 15%;
+    height: 10%;
+    padding: 0% ;
+    color: #eee;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+  
+/*===============main-content============*/
+main-content {
+    width: 200rem;
+    height: 900em;
+
+    flex-direction: column;
+    
+    
+}
+main-content h2 {
+   
+    margin-bottom: 2%;
+    font-size: 2.2em;
+}
+
+main-content .text {
+    margin-left: 10vh;
+    margin-bottom: 10%;
+    width: 75%;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+/*================CARDS================*/
+main .techs .cards-container{
+    display: flex;
+    align-items: center;
+}
+main .techs .cards-container .card {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    background-color: #90cec2;
+    border-radius: 8px;
+    margin-right: 1.8em;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.2s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
+}
+main .techs .cards-container .card img {
+    width: 90%;
+    height: 80px;
+    left: 90px;
+}
+main .techs .cards-container .card:hover{
+    box-shadow: 0px 0px 15px #1eb92a;
+}
+
+/*figure===================*/
+main article .nome {
+    margin-left: 10%;
+   
+   
+  }
+  main figure {
+    margin-left: 200%;
+  }
+main figure img {
+  
+   
+    width: 60vh;
+    height: 55vh;
+    border-radius: 50%;
+
+    margin-bottom: 10%;
+    cursor: pointer;
+    border: 0.2s ease-in-out;
+    transition: box-shadow 0.30s ease-in-out;
+}
+main figure img:hover {
+    box-shadow: 1px 1px 20px #26a610;
+}
+main article {
+    margin-left: 0%;
+    margin-top: -9%;
+    width:620px;
+    height: 200px;
+    
+}
+maim article .imagem{
+    
+}
+main arside{
+    width: 40rem;
+   
+}
+button{
+    color: #eee;
+    background-color: transparent;
+    align-items: center;
+    margin-left: 15%;
+    width: 150vh;
+height: 100px;
+    margin-bottom: 0%;
+    cursor: pointer;
+    border: 0.2s ease-in-out;
+    transition: box-shadow 0.30s ease-in-out;
+}
+button:hover {
+    box-shadow: 1px 1px 20px #26a610;
+}

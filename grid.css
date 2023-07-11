@@ -1,0 +1,126 @@
+.grid{
+
+	
+             display:flex;
+             grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+             grid-gap: 10px;
+             max-width: 150px;
+             max-height: 500px;
+             margin: 0 auto;}
+
+.grid nav{
+    margin-left: -100%;
+}             
+
+         
+.grid div{
+    margin: 10%;
+             font-family: arial;
+             text-align: center;
+             font-size: 1.6rem;
+            
+             padding-bottom: 10px;
+             box-shadow: 0.2px 0.2px #000;}
+#formulario{
+             background-color: rgba(173,216,230);
+
+         }
+.formulario-contato{
+
+             font-family: candara, arial;
+             font-size: 1,8rem;
+             padding: 10px;
+             text-align: left;
+             margin-left: 5%;
+             font-weight: bold;
+
+         }
+input{
+             font-family: sans-serif;
+             font-size: 7rem;
+             padding: 5px;
+  }
+         .dados-formulario{
+             width: 50%;
+
+         }
+nav{
+             text-align: right;
+             margin-top: 10px;
+             font-weight: bold;
+             font-family: candara, arial;
+             font-size: 1.6rem;
+             margin-right: 2%;
+             word-spacing: 20px;
+         }
+a{
+             text-decoration: none;
+             color:#00e0ff;
+             transition: all 280ms ease-in-out;
+
+         }
+a:hover{
+             color:#fff;
+         }
+
+.projeto-1{
+    animation-fill-mode:initial;
+    width: 18rem;
+   height: 10em;
+   border-radius: 20%;
+   transition: 30ms ease-in-out;
+
+}
+.projeto-2{
+    animation-fill-mode:initial;
+    margin-top: auto;
+    width: 17rem;
+   height: 10em;
+   border-radius: 20%;
+   transition: 30ms ease-in-out;
+}
+.projeto-3{
+    animation-fill-mode:initial;
+    margin-top: 1rem;
+    width: 18rem;
+   height: 10em;
+   border-radius: 20%;
+   transition: 30ms ease-in-out;
+}
+
+.imagem-grid{
+             width: 8rem;
+             height: 16rem;
+             border-radius: 10%;
+         transition: 30ms ease-in-out;
+         }
+ #grid-container {
+            margin-top: 50rem;
+            margin-left: 20em;
+            padding: 5px;
+
+            }   
+ 
+
+.container {
+   
+    width: 95%;
+ 
+    display:grid;
+    margin-top: 40px;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 90%;
+    min-width: 90px;
+    
+}
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+
+}
+
+   
+   
